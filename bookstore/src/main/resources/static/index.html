@@ -1,0 +1,14 @@
+<head>
+    <script>
+        function getBooks(){
+            url = "/books"
+            fetch(url).then(response => console.log(response));
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="getBooks()">Get Books</button>
+        <div id="bookSection"></div>
+    </div>
+</body>
